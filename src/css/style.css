@@ -1,0 +1,401 @@
+html{
+    font-family: 'Inter', sans-serif;
+}
+
+/* NAVBAR */
+
+body {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .logo{
+    display: flex;
+    gap: 10px;
+    color: var(--logo-text);
+  }
+  
+  .links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  .links a:hover{
+    color: var(--primary-red);
+  }
+  
+  button{
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+  
+  .buttons .sing-up{
+    background-color: #8E2424;
+    color: #FFF;
+  }
+
+  @media(max-width: 425px){
+    .logo{
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      justify-content: center;
+  }
+
+  nav{
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      font-size: 13px;
+  }
+
+  .links{
+    margin-top: 15px;
+  }
+
+  .buttons{
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+
+/* CABEÇALHO */
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 96px;
+}
+
+.about-us span{
+    color: var(--primary-red);
+    line-height: 24px;
+}
+
+.about-us h2{
+    font-size: 48px;
+    color: var(--title-color);
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.about-us p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--description-text);
+}
+
+@media(max-width: 425px){
+  .about-us{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .about-us h2{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .about-us p{
+    font-size: 16px;
+  }
+}
+
+/* MÉTRICAS */
+
+.metricas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px 112px 0 112px;
+}
+
+.metricas span{
+  color: var(--primary-red);
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.metricas h3{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.metricas p{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--description-text);
+}
+
+.metricas div{
+  width: 300px;
+}
+
+@media(max-width: 425px){
+  .metricas{
+    width: 100%;
+    flex-direction: column;
+    margin: 40px 0;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+/* VAGAS ABERTAS */
+
+.vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.vagas div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.vagas img{
+  min-width: 1020px;
+  margin-top: 40px;
+}
+
+.vagas span{
+  color: var(--primary-red);
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #F9F4F4;
+  padding: 4px;
+  border-radius: 20px;
+}
+
+.vagas h4{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.vagas p{
+  font-size: 20px;
+  color: var(--description-text);
+  line-height: 24px;
+}
+
+@media(max-width: 425px){
+  .vagas{
+    width: 100%;
+  }
+
+  .vagas div{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* DESCRIÇÃO VAGAS */
+
+.descricao-vagas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  gap: 24px;
+}
+
+.descricao-vagas div{
+  width: 768px;
+}
+
+.descricao-vagas .area-vaga{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--title-color);
+}
+
+.descricao-vagas .vaga{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 768px;
+  height: 136px;
+  border: 1px solid #EAECF0;
+  border-radius: 16px;
+  padding: 24px;
+
+}
+
+.descricao-vagas .vaga span{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.descricao-vagas .vaga .informacoes span{
+  color: var(--description-text);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media(max-width: 425px){
+  .descricao-vagas{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .descricao-vagas div{
+    width: 100%;
+  }
+
+  .descricao-vagas .vaga{
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* DEPOIMENTOS */
+
+.depoimentos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 1024px;
+}
+
+.depoimentos span{
+  color: var(--primary-red);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.depoimentos h4{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: center;
+  width: 1024px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.depoimentos p{
+  color: var(--title-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.depoimentos .cargo{
+  color: var(--description-text);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media(max-width: 425px){
+  .depoimentos{
+    width: 100%;
+  }
+
+  .depoimentos h4{
+    width: 100%;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 10px;
+  }
+}
+
+/* RODAPÉ */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
+  gap: 20px;
+  background-color: #F9FAFB;
+}
+
+footer h4{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+footer p{
+  color: var(--description-text);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer .creditos{
+  color: #98A2B3;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+footer input{
+  width: 360px;
+  height: 48px; 
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  padding: 12px 14px 12px 16px;
+}
+
+footer input::placeholder{
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+
+@media(max-width: 425px){
+  footer{
+    width: 100%;
+    text-align: center;
+  }
+
+  footer h4{
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  footer p{
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  footer input{
+    width: 200px;
+  }
+
+  footer .creditos{
+    font-size: 14px;
+  }
+
+}
